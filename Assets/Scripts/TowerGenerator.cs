@@ -4,7 +4,7 @@ using System.Collections;
 public class TowerGenerator : MonoBehaviour {
 	public int floors = 12;
 	public GameObject[] levelsA, levelsB, levelsC;
-	public GameObject levelFinal;
+	public GameObject levelLobby, levelFinal;
 	float scaleFactor = 4;
 
 	// Use this for initialization
@@ -16,19 +16,20 @@ public class TowerGenerator : MonoBehaviour {
 	void GenerateTower () {
 		GameObject level;
 		int rand;
-		for (int i = 0; i < floors; i++) {
-			if (i < floors / 3) {
+		AddFloor (levelLobby, 0);
+		for (int i = 1; i <= floors; i++) {
+			if (i <= floors / 3) {
 				rand = Random.Range (0, levelsA.Length);
 				AddFloor(levelsA[rand], i);
-			} else if (i < floors / 3 * 2) {
+			} else if (i <= floors / 3 * 2) {
 				rand = Random.Range (0, levelsB.Length);
 				AddFloor(levelsB[rand], i);
-			} else if (i < floors) {
+			} else if (i <= floors) {
 				rand = Random.Range (0, levelsC.Length);
 				AddFloor(levelsC[rand], i);
 			}
 		}
-		AddFloor (levelFinal, floors);
+		AddFloor (levelFinal, floors + 1);
 	}
 
 	void AddFloor (GameObject level, int height) {
