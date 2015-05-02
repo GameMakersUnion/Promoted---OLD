@@ -9,6 +9,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 412352}
   - 212: {fileID: 21256408}
+  - 61: {fileID: 6168882}
+  - 61: {fileID: 6117804}
+  - 61: {fileID: 6195712}
+  - 61: {fileID: 6123706}
   m_Layer: 0
   m_Name: Level_A_01
   m_TagString: Untagged
@@ -28,6 +32,58 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!61 &6117804
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102912}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: .949999988}
+  serializedVersion: 2
+  m_Size: {x: 8, y: .100000001}
+--- !u!61 &6123706
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102912}
+  m_Enabled: 1
+  m_Material: {fileID: 6200000, guid: 9620500ea8f0e44929ad3016e867fe7d, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 0, y: -.949999988}
+  serializedVersion: 2
+  m_Size: {x: 8, y: .100000001}
+--- !u!61 &6168882
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102912}
+  m_Enabled: 1
+  m_Material: {fileID: 6200000, guid: b57d59cfb360145c69578a660bf84419, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: -3.95000005, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .100000001, y: 2}
+--- !u!61 &6195712
+BoxCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 102912}
+  m_Enabled: 1
+  m_Material: {fileID: 6200000, guid: b57d59cfb360145c69578a660bf84419, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_Offset: {x: 3.95000005, y: 0}
+  serializedVersion: 2
+  m_Size: {x: .100000001, y: 2}
 --- !u!212 &21256408
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -52,8 +108,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 658469e3598484c0a8783f0cdaca47b8, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: e8fb58acddf184d16955e7d00cb463d1, type: 3}
+  m_Color: {r: 0, g: 1, b: .00689649582, a: 1}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
