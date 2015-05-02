@@ -292,7 +292,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 2
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -422,9 +422,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 898128415}
   - 212: {fileID: 898128414}
-  - 58: {fileID: 898128417}
   - 50: {fileID: 898128416}
+  - 61: {fileID: 898128417}
   - 114: {fileID: 898128418}
+  - 95: {fileID: 898128419}
   m_Layer: 2
   m_Name: Player
   m_TagString: Player
@@ -456,7 +457,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a76871fca86fd42e58d2e77d0679d93a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 93928d2f7c08544439275839275fed40, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &898128415
 Transform:
@@ -486,8 +487,8 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
---- !u!58 &898128417
-CircleCollider2D:
+--- !u!61 &898128417
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -498,7 +499,7 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: .444444448
+  m_Size: {x: .305555552, y: 1.22222221}
 --- !u!114 &898128418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -512,6 +513,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 4
   jumpPower: 5
+--- !u!95 &898128419
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 898128413}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a558d81b6a0e84b1c8da84e80754e07c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1033552661
 GameObject:
   m_ObjectHideFlags: 0

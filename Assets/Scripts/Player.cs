@@ -21,8 +21,10 @@ public class Player : MonoBehaviour {
 	void FixedUpdate () {
 		// Horizontal movement
 		if (Input.GetKey(KeyCode.LeftArrow)) {
+			transform.localScale = new Vector3(1f,1f,1f);
 			body.velocity = new Vector2(-speed, body.velocity.y);
 		} else if (Input.GetKey(KeyCode.RightArrow)) {
+			transform.localScale = new Vector3(-1f,1f,1f);
 			body.velocity = new Vector2(speed, body.velocity.y);
 		}
 		// Vertical movement
