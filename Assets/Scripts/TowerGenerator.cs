@@ -5,7 +5,7 @@ public class TowerGenerator : MonoBehaviour {
 	public int floors = 12;
 	public GameObject[] levelsA, levelsB, levelsC;
 	public GameObject levelLobby, levelFinal;
-	float scaleFactor = 2;
+	float scaleFactor = 4;
 
 	// Use this for initialization
 	void Start () {

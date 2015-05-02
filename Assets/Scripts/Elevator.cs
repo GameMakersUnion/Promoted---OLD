@@ -2,14 +2,13 @@
 using System.Collections;
 
 public class Elevator : MonoBehaviour {
+	public bool isOnElevator = false;
 
-	// Use this for initialization
-	void Start () {
-	
+	void OnTriggerEnter () {
+		isOnElevator = true;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	void OnTriggerExit () {
+		isOnElevator = false;
 	}
 }
